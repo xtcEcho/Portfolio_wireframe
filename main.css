@@ -1,0 +1,274 @@
+* {
+    box-sizing:border-box;
+}
+
+body {
+    font-family:"Open Sans", sans-serif;
+}
+
+nav span {
+    position: absolute;
+    left:3%;
+    font-weight: bold;
+}
+
+main, footer{
+    margin: 0;
+    padding: 0;
+    margin: 3%;
+}
+nav{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:10;
+    background-color: lightgray;
+    display:flex;
+    align-items: center;
+}
+
+
+header h2{
+    font-weight: lighter;
+}
+
+.inner {
+    margin: 0 3%;
+}
+
+.big_line_height {
+    line-height: 170%;
+}
+
+.other_info button{
+    background-color: Transparent;
+    border:1px black solid;
+}
+
+@media screen and (max-width:899px) { 
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        font-size: 28px;
+        
+    }
+    h3{
+        font-size: 18px;
+    }
+    p, .other_info b{
+        font-size:18px;
+    }
+    nav{
+        height: 70px;
+    }
+
+    nav span {
+        font-size: 24px;
+    }
+
+    .big{
+        display:none;
+    }
+    .small{
+        position: absolute;
+        right:3%;
+        height:24px;
+        width: auto;
+    }
+
+    header{
+        margin-top:150px;
+    }
+
+    header h1{
+        line-height: 10%;
+        
+    }
+
+    /* header img{
+        padding: 0 3%;
+        content:url(//images/profile_horizontal.JPG);
+        width:100%;
+    } */
+    header #profile_pic{
+        padding: 0 3%;
+        width: 100%;
+        padding-top: 70%;
+        background-color: lightgrey;
+    }
+
+    .section_title {
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+
+    .projects img{
+        width:100%;
+        height:auto;
+    }
+
+    .projects .section_pic{
+        width: 100%;
+        padding-top: 70%;
+        background-color: lightgray;
+    }
+
+   .other_info b{
+        display: block;
+   }
+
+   .other_info button{
+        font-size: 18px;
+        margin-top: 24px;
+        margin-bottom:60px;
+        margin-right: 20px;
+        padding: 10px 15px;
+        
+   }
+
+   footer b{
+       display:block;
+       margin-bottom: 15px;
+   }
+   footer a{
+       text-decoration: none;
+   }
+}
+
+@media screen and (min-width:900px) {
+    h1 {
+        font-size: 64px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    p, .other_info b{
+        font-size:24px;
+    }
+    
+    nav {
+        height: 90px;
+    }
+
+    nav span {
+        font-size: 36px;
+    }
+
+    .small {
+        display: none;
+    }
+
+    ul.big {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        right: 3%;
+    }
+
+    .big li {
+        display: inline;
+        font: lighter;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    .big li a, .contact_info a{
+        text-decoration: none;
+    }
+
+    header, .projects>section {
+        /* margin-top:240px; */
+        width: 100%;
+        /* position: relative; */
+        display:flex;
+        /* align-items: center; */
+    }
+
+    header {
+        position: relative;
+        margin-top: 240px;
+        align-items: center;
+    }
+    header div.section_text{
+        display: inline-block;
+        width: 50%;
+        /* margin-right: 14%; */
+        
+    }
+    header #profile_pic{
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        width:300px;
+        padding-top: 40%;
+        margin: 0 5%;
+        background-color: lightgray;
+        
+    }
+    header h1{
+        line-height: 20%;
+        
+    }
+
+    /* .projects {
+        position: relative;
+    } */
+
+    .section_title {
+        margin-top: 280px;
+        margin-bottom: 60px;
+    }
+
+    .projects>section{
+        align-items: flex-start;
+    }
+
+    .projects .section_text {
+        width: 600px;
+        float: right;
+        margin-left: 5%;
+        /* position: absolute;
+        right: 0; */
+    }
+    .projects>section h2 {
+        margin-top: 0;
+        padding-top: 0;
+        line-height: 110%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .projects img {
+        /* display: inline-block; */
+        padding:6%;
+        width:100%;
+        height:auto;
+    }
+    .projects .section_pic{
+        width: 100%;
+        padding-top:50%;
+        background-color: lightgray;
+    }
+    .projects b{
+        display: block;
+    }
+    .projects button{
+        font-size: 24px;
+        padding: 10px 15px;
+        margin-top: 20px;
+        margin-right:10px;
+    }
+    .projects>section {
+        margin-bottom: 80px;
+    }
+
+    .contact_info b{
+        font-size: 20px;
+        margin-right: 60px;
+    }
+}
