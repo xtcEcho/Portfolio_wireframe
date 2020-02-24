@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Whale fall</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./node_modules/animejs/lib/anime.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script>
+            ScrollReveal();
+        </script>
+    </head>
+    
+    <body>
+        <div id="header-placeholder">
+            <a href='index.html'><h3 class="RobotoCondensed logo" id="logo">ECHO</h3></a>
+            <div class='hamburger'id="icon"></div>
+            <div class='hamburger' id='background'></div>
+        </div>
+        <div id="nav-placeholder" class='RobotoCondensed'>
+            <h1 class='nav-link' data-url="index.html">Home</h1>
+            <h1 class='nav-link' data-url="index.html#projects">Projects</h1>
+            <h1 class='nav-link'>Resume</h1>
+            <h1 class='nav-link'data-url='about-me.html'>About Echo</h1>
+        </div>
+        <video autoplay muted loop id="whalefall-demo" class="top-image">
+                <source src="project-images/whalefall/toppage.mov" type="video/mp4">
+        </video>              
+        <div id="p-description" class="thin-padding">
+            <h1 class="RobotoCondensed h1-reveal">
+                INTERACTIVE DRAWING EXPERIMENTS USING PROCESSING
+            </h1>
+            <p class="desc-reveal">This is a drawing machine inspired by the lifecycl of whale fall. It offers various drawing mode that symbolizes the different stages of ecological succession in a whale-fall ecosystem, which enables users to enjoy a mindful experience of creating beautiful visuals.</p>
+        </div>
+
+        <div class="thin-padding inline p-detail">
+            <div class="p-inline-text"></div>
+            <div class="p-inline-image">
+                <h4 class="RobotoCondensed reveal-text">CREATING STAGE</h4>
+                <video autoplay muted loop id="create-stage" class="reveal-text">
+                    <source src="project-images/whalefall/creating-stage.mov" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="thin-padding inline p-detail">
+            <div class="p-inline-image reveal-text">
+                <h4 class="RobotoCondensed reveal-text">MORPHING STAGE</h4>
+                <video autoplay muted loop id="morph-stage" class="reveal-text">
+                    <source src="project-images/whalefall/morphing-stage.mov" type="video/mp4">
+                </video>
+            </div>
+            <div class="p-inline-text"></div>
+        </div>
+
+        <div class="thin-padding inline p-detail">
+            <div class="p-inline-text"></div>
+            <div class="p-inline-image reveal-text ">
+                <h4 class="RobotoCondensed reveal-text">FRAGMENTING STAGE</h4>
+                <video autoplay muted loop id="fragment-stage" class="reveal-text">
+                    <source src="project-images/whalefall/fragmenting-stage.mov" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <img id="whalefall-snapshot" class="no-padding p-block-image p-detail reveal-text" src="project-images/whalefall/whaleFall_snapshot.jpg">
+    
+        <script src="main.js"></script>
+        
+        <!-- <script src="anime.min.js"></script> -->
+        <script>
+            ScrollReveal().reveal('.h1-reveal', { delay: 300, duration: 1000, opacity: 0.0})
+            ScrollReveal().reveal('.desc-reveal', {distance:"100%", origin:'left', delay: 300, duration: 1200, opacity: 1, easing: 'ease'})
+            ScrollReveal().reveal('.reveal-text', {distance: '10%', origin:'bottom', delay:200, duration:700})
+        </script>
+        <!-- <script src='hamburger.js'></script> -->
+    </body>
+</html>

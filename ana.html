@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>ANA mobile redesign</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./node_modules/animejs/lib/anime.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script>
+            ScrollReveal();
+        </script>
+    </head>
+    
+    <body>
+        <div id="header-placeholder">
+            <a href='index.html'><h3 class="RobotoCondensed logo" id="logo">ECHO</h3></a>
+            <div class='hamburger'id="icon"></div>
+            <div class='hamburger' id='background'></div>
+        </div>
+        <div id="nav-placeholder" class='RobotoCondensed'>
+            <h1 class='nav-link' data-url="index.html">Home</h1>
+            <h1 class='nav-link' data-url="index.html#projects">Projects</h1>
+            <h1 class='nav-link'>Resume</h1>
+            <h1 class='nav-link'data-url='about-me.html'>About Echo</h1>
+        </div>
+        <img id="ana-top-image" class="top-image" src="project-images/ANA/frontpage.jpg">              
+        <div id="p-description" class="thin-padding">
+            <h1 class="RobotoCondensed h1-reveal">
+                ANA MOBILE REDESIGN
+            </h1>
+            <p class="desc-reveal">As an All Nippon Airways frequent flyer, I was eager to try out the ANA Mobile App when it first came out. However, to my disappointment, the app is fairly hard to use. So I redesigned the mobile app myself for this airline that I truly love.</p>
+        </div>
+
+        <div id="ana-intro" class="thick-padding p-detail">
+            <h4 class='RobotoCondensed reveal-text'>AN APP THAT MATCHES UP WITH THE AIRLINE</h4>
+            <div class="p-block-text">
+                <p class='reveal-text'>I wanted to focus on implementing the experience of booking flights using mobile app, since I found that the booking process is pretty redundant both on the airliner’s official website and on the app. After plenty of user testing an trying to book the ticket myself, I spotted the following major problems：</p>
+                <ul class="reveal-text">
+                    <li>The home page is basically blank with minimum information provided. The users often feel isolated and lost.</li>
+                    <li>The booking of domestic flight and international flight are separated. While the domestic booking page is relatively simple and clean, the international booking page is merely redirecting users to the website.</li>
+                    <li>The information are all piled up within a single page, so that it is very easy to miss out on the truly important ones.</li>
+                    <li>No way to close and restart a new flight search if the user is in the middle of another search. Have to press back multiple times until they reach back to the starting page.</li>
+                    <li>The interface is running off screens, leaving a very unprofessional impression to the users.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id='ana-home' class='p-detail thick-padding'>
+            <div class='p-half-block-text right'>
+                <h4 class="RobotoCondensed reveal-text">A WARMER, MORE WELCOMING HOME</h4>
+                <p class='reveal-text'>As shown on the original home page, the whole design is pretty one-directional, having no interactive elements for the users. Additionally, although there aren’t many functions, there are two entries for booking flights. Accordingly, my redesign was focusing on giving the users a more interactive, informative interface with no repetitive functions. Besides rearranging the main control panel, I also introduced ANA NEWS to the home page as it keeps the users up-to-date with what’s going on with the 5 star airline.</p>
+            </div>
+            <div class="pic-set reveal-text">
+                <img class="p-block-image" src="project-images/ANA/pic1.jpg">
+            </div>
+        </div>
+
+        <div id='ana-input' class="p-detail thick-padding">
+            <div class="p-half-block-text left">
+                <h4 class="RobotoCondensed reveal-text">LESS TAPPING, LESS SELECTING, MORE OPTIONS</h4>
+                <p class="reveal-text">In my new design, I eliminates certain taps that unnecessary for the users, such as domestic and international, and book flights and award reservation (which means that booking tickets with mileage). By trying to maximize the information with minimum actions that require the users to make, the new interface now is able to present the whole booking page without having the users scroll down.</p>
+                <!-- <p>The “compare with fares three day before and after” and the confusing fare comparison page are replaced by a simple fare comparison tabs that allow the user to scroll side ways on the search result page.</p> -->
+            </div>
+            <div class="pic-set reveal-text">
+                <img class="p-block-image" src="project-images/ANA/pic2.png">
+                <img class="p-block-image" src="project-images/ANA/pic6.png">
+            </div>
+        </div>
+
+        <div id='ana-buy' class="p-detail thick-padding">
+            <div class="p-half-block-text right">
+                <h4 class="RobotoCondensed reveal-text">BOOKING FLIGHT CAN BE PLEASANT</h4>
+                <p class="reveal-text">Planning an upcoming trip is supposed to be exciting and joyful, but your moods can also be ruined by the overwhelming information of flight details, especially on the small screen of the smart phone. In my design, I left more space for the flights details, which are presented in a clear and easily understandable fashion. The frustrating scrolling back and forth is now gone.</p>
+                <p class="reveal-text">The “compare with fares three day before and after” and the confusing fare comparison page are replaced by a simple fare comparison tabs that allow the user to scroll side ways on the search result page.</p>
+                <p class="reveal-text">There is also an innovative feature introduced in the new interface — the amount summary of the flight is placed on the top right under the brief summary of the flight search. Now, the “Next” button on the bottom is so much cleaner and more powerful.</p>
+            </div>
+            <div class="pic-set reveal-text">
+                <img class='p-block-image' src='project-images/ANA/pic4.png'>
+                <img class='p-block-image' src='project-images/ANA/pic5.png'>
+            </div>
+        </div>
+    
+        <script src="main.js"></script>
+        
+        <!-- <script src="anime.min.js"></script> -->
+        <script>
+            ScrollReveal().reveal('.h1-reveal', { delay: 300, duration: 1000, opacity: 0.0})
+            ScrollReveal().reveal('.desc-reveal', {distance:"100%", origin:'left', delay: 300, duration: 1200, opacity: 1, easing: 'ease'})
+            ScrollReveal().reveal('.reveal-text', {distance: '10%', origin:'bottom', delay:200, duration:700})
+        </script>
+        <!-- <script src='hamburger.js'></script> -->
+    </body>
+</html>

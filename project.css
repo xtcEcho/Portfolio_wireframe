@@ -1,0 +1,261 @@
+.top-image {
+    width: 100vw; 
+    min-height: auto; 
+}
+
+#p-description p{
+    font-weight: 300;
+}
+
+.p-detail h4{
+    font-weight: 400;
+}
+
+.p-detail p:not(.p-image-description), li {
+    color: rgb(88, 83, 83);
+    /* font-size: 18px; */
+    /* line-height: 30px; */
+}
+
+.p-block-image{
+    width: 100%;
+}
+
+.p-image-description{
+    color: rgb(143, 143, 143);
+}
+
+
+img:not(.top-image){
+    margin-top: 20px;
+}
+
+#create-stage, #morph-stage, #fragment-stage {
+    width: 100%;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+
+@media screen and (max-width: 899px){
+    .top-image {
+        margin-top: 60px;
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .thick-padding, .thin-padding{
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    #p-description {
+        margin-top: 50px;
+    }
+
+
+   #p-description h1{
+       font-size: 36px;
+       text-align: left;
+       padding-top: 30px;
+       padding-bottom: 20px;
+       /* padding-bottom: 10px; */
+       /* change the font color!!!! */
+   }
+   #p-description p {
+       font-size: 24px;
+       text-align: left;
+       /* margin-top: -10px; */
+       /* padding-top: -20px; */
+       padding-bottom: 150px;
+   }
+
+   img:not(.top-image, .pic-set .p-image-description){
+        margin-bottom: 20px;
+        width: 100%;
+        /* margin-bottom: 20px; */
+   }
+
+   .p-inline-image {
+        width: 100%;
+        align-self: center;
+    }
+
+   .p-detail {
+        margin-bottom: 100px;
+   }
+
+   /* .p-detail .p-block-text {
+       margin-bottom: 50px;
+   } */
+
+   .p-detail h4:not(.section-title) {
+       font-size: 28px;
+       margin-left: -3vw;
+   }
+
+   .section-title {
+        font-size: 28px;
+        margin-bottom: 80px;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+
+    h5 {
+        font-size: 18px;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        margin-top: 60px;
+    }
+
+    .emphasis {
+        font-weight: 700;
+    }
+    
+    /* span {
+        font-weight: 900;
+        font-style: italic;
+    } */
+
+   .p-detail .p-image-description, p, li{
+       font-size: 14px;
+       line-height: 24px;
+   }
+
+   .inline {
+       display: flex;
+       flex-direction: column;
+   }
+   #p-concept {
+       flex-direction: column-reverse;
+   }
+
+   #pier-demo {
+       height: 50vh;
+   }
+}
+
+@media screen and (min-width: 900px){
+    .thin-padding {
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+
+    #p-description{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        word-wrap: break-word;
+    }
+    #p-description h1{
+        font-size: 6.5vw;
+        width: 35%;
+        /* text-align: right; */
+    }
+
+    #p-description p{
+        font-size: 4vw;
+        width: 60%;
+        /* text-align: right; */
+    }
+
+    .p-detail {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    /* .section-title{
+        margin-bottom: ;
+    } */
+
+    .p-detail .p-image-description, .p-detail p:not(.emphasis), li{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .p-inline-image {
+        width: 60%;
+        align-self: center;
+    }
+
+    .no-padding {
+        /* padding-top:40px; */
+        padding-bottom: 40px;
+    }
+
+    .p-inline-text{
+        width: 30%;
+    }
+
+    h4{
+        font-size: 48px;
+        /* margin-top: 0;
+        margin-bottom: 0; */
+    }
+
+    .inline {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #p-concept{
+        /* text-align: right; */
+    }
+
+    .pic-set{
+        margin-top: 50px;
+    }
+
+    .p-half-block-text {
+        width: 100%;
+        /* margin-bottom: 100px; */
+    }
+
+    .p-half-block-text.right{
+        padding-left: 50%
+    }
+    .p-half-block-text.left {
+        padding-right: 50%;
+    }
+
+    /* #pier1-top-image {
+        padding: 5vh 5vw;
+        background-color: white;
+    } */
+
+    h5 {
+        font-weight: normal;
+        font-size: 40px;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 40px;
+        color: rgb(201, 201, 201);
+    }
+
+    .emphasis {
+        font-weight: 500;
+        font-size: 40px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    #pier-demo {
+        margin-left: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-right: auto;
+        width: 200px;
+        text-align: center;
+    }
+
+    #selfie-video {
+        padding-top: 30px;
+        background-color: white;
+        /* border: 10px inset white; */
+    }
+}

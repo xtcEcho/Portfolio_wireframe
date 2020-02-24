@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Remote group selfie machine</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./node_modules/animejs/lib/anime.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script>
+            ScrollReveal();
+        </script>
+    </head>
+    
+    <body>
+        <div id="header-placeholder">
+            <a href='index.html'><h3 class="RobotoCondensed logo" id="logo">ECHO</h3></a>
+            <div class='hamburger'id="icon"></div>
+            <div class='hamburger' id='background'></div>
+        </div>
+        <div id="nav-placeholder" class='RobotoCondensed'>
+            <h1 class='nav-link' data-url="index.html">Home</h1>
+            <h1 class='nav-link' data-url="index.html#projects">Projects</h1>
+            <h1 class='nav-link'>Resume</h1>
+            <h1 class='nav-link'data-url='about-me.html'>About Echo</h1>
+        </div>
+        <video autoplay muted loop id="selfie-video" class="top-image">
+                <source src="project-images/remote-selfie/video.mov" type="video/mp4">
+        </video>              
+        <div id="p-description" class="thin-padding">
+            <h1 class="RobotoCondensed h1-reveal">
+                REMOTE GROUP SELFIE MACHINE
+            </h1>
+            <p class="desc-reveal">Inspired by the selfie culture and peer to peer data transmission, I created a selfie machine that makes remote group selfie possible with PeerJs and BodyPix. With this application, users can connect with others in remote places, and take group selfies that look like a real group selfie where people are physically together.</p>
+        </div>
+
+        <div id='selfie-inspiration' class='thick-padding p-detail'>
+            <div class="p-half-block-text left">
+                <h4 class="RobotoCondensed reveal-text">INSPIRATION</h4>
+                <p class="reveal-text">I like selfies, it’s a unique and irreplaceable part of my life. I see it as a way to record and to communicate. There are times when I was video calling my friends in other countries who I can’t see in person for a long period of time, we screenshot so that it felt like we are taking selfies together. </p>
+            </div>
+            <div class="p-half-block-text right">
+                <p class="reveal-text">And this really got me thinking about how to take selfies together with someone you are not with in person. I looked into Japanese Purikura machine, the originator of selfie machine that started the selfie culture by the end of 20 century. This tiny boxy room attracts people of all ages to come in, and turns group selfie taking into a ritual. I want to create a virtual Purikura, for people are physically apart, to come in and take selfies together.</p>
+            </div>
+            <div id='purikura' class='pic-set reveal-text'>
+                <img class="p-block-image" src="./project-images/remote-selfie/purikura.png">
+                <p class="p-image-description">Purikura selfie machine</p>
+            </div>
+        </div>
+       
+        <div class='thick-padding p-detail'>
+            <div class="p-half-block-text left">
+                <h4 class="RobotoCondensed reveal-text">TECHNICAL APPROACH</h4>
+                <p class="reveal-text">This project is powered by JS library Peer.js and BodyPix. PeerJS offered a simple solution for using web real-time communication video call, which enables me to receive real time video stream from another device. BodyPix uses TensorFlow.js to realize real-time body segmentation. I was lucky enough to get to know Dan Oved, one of the developer of BodyPix. He helped me a lot in the development process.</p>
+                <p class='reveal-text'>The real-time body detection in this project is a result of combining these 2 great libraries together. After received incoming video stream, I used BodyPix to mask out the background on the video to realize the group selfie effect.</p>
+            </div>
+            <div id="two-people" class="pic-set reveal-text">
+                <img class="p-block-image" src="/project-images/remote-selfie/two-people.png">
+                <p class='p-image-description'>This is picture that's taken in the video shown above</p>
+            </div>
+            <div id="multi-people" class="pic-set reveal-text">
+                <img class="p-block-image" src="/project-images/remote-selfie/multi-people.png">
+                <p class='p-image-description'>The record so far is a 9 people group selfie using 6 cameras.</p>
+            </div>
+        </div>
+    
+        <script src="main.js"></script>
+        
+        <!-- <script src="anime.min.js"></script> -->
+        <script>
+            ScrollReveal().reveal('.h1-reveal', { delay: 300, duration: 1000, opacity: 0.0})
+            ScrollReveal().reveal('.desc-reveal', {distance:"100%", origin:'left', delay: 300, duration: 1200, opacity: 1, easing: 'ease'})
+            ScrollReveal().reveal('.reveal-text', {distance: '10%', origin:'bottom', delay:200, duration:700})
+        </script>
+        <!-- <script src='hamburger.js'></script> -->
+    </body>
+</html>

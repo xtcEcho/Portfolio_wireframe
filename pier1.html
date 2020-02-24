@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Pier 1 mobile app</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./node_modules/animejs/lib/anime.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script>
+            ScrollReveal();
+        </script>
+    </head>
+    
+    <body>
+        <div id="header-placeholder">
+            <a href='index.html'><h3 class="RobotoCondensed logo" id="logo">ECHO</h3></a>
+            <div class='hamburger'id="icon"></div>
+            <div class='hamburger' id='background'></div>
+        </div>
+        <div id="nav-placeholder" class='RobotoCondensed'>
+            <h1 class='nav-link' data-url="index.html">Home</h1>
+            <h1 class='nav-link' data-url="index.html#projects">Projects</h1>
+            <h1 class='nav-link'>Resume</h1>
+            <h1 class='nav-link'data-url='about-me.html'>About Echo</h1>
+        </div>
+        <img id="pier1-top-image" class="top-image" src="project-images/pier1/picture1.png">          
+        <div id="p-description" class="thin-padding">
+            <h1 class="RobotoCondensed h1-reveal">
+                PIER 1 MOBILE APP DESIGN
+            </h1>
+            <p class="desc-reveal">A site specific user experience design project that I did for DUMBO, New York. I designed a mobile app that helps fashion houses and studios to save printing costs and have positive impact on climate change at the same time. </p>
+        </div>
+
+        <div id='pier-define-problem' class="p-detail">
+            <h4 class="section-title thick-padding RobotoCondensed reveal-text">DEFINING PROBLEM WITH PERSONAS</h4>
+            <div class='thick-padding p-block-text reveal-text'>
+                <p>DUMBO is strongly affected by climate change. Although it was greatly damaged by Hurricane Sandy in 2012, the neighborhood has been growing really fast. I started to interview people that work and live around the area in order to finding out how I and my project can be helpful. Among the people I talk to, Jiamin and Louis caught my attention.</p>
+            </div>
+            <h5 class="reveal-text">PERSONA 1: JIAMIN</h5>
+            <img class="no-padding p-block-image reveal-text" src="project-images/pier1/picture2.jpg">
+            <div class="thick-padding p-block-text">
+                <p class="reveal-text">Jiamin said that fashion industry in New York is a very wasteful industry, and printing is one of the major problems in her career.</p>
+                <p class="emphasis RobotoCondensed reveal-text">"I spend a lot of time printing, especially during market week, I'll spend about <span>3 hours</span> printing each day. And most of the printing works are repetitive and unnecessary."</p> 
+            </div>
+            <h5 class="reveal-text">PERSONA 2: LOUIS</h5>
+            <img class="no-padding p-block-image reveal-text" src="project-images/pier1/picture4.jpg">
+            <div class="thick-padding">
+                <p class='p-block-text reveal-text'>Louis told me that tech industry is the fastest growing industry in DUMBO currently. Working as a software engineer, he provides technology solutions to his clients. I told him about Jiamin’s situation, he said the printing problem can be solved by a more advanced software.</p>
+                <img class="p-block-image reveal-text" src="project-images/pier1/picture5.jpg">
+            </div>
+            <p class="thick-padding p-block-text emphasis RobotoCondensed reveal-text">After interviewing Jiamin and Louis, I came up with the following idea: <span>Help the local fashion studios to eliminate the printing waste and to improve on work efficiency with the support from local tech companies.</span></p>
+        </div>
+        
+        <div id="pier-search-solution" class="p-detail">
+            <h4 class="section-title RobotoCondensed thick-padding reveal-text">SEARCHING FOR SOLUTION</h4>
+            <div class="thick-padding">
+                <p class="p-block-text reveal-text">“Most of the fashion people are still so far from technologies. We don’t know what kind of technology we need in order to improve.”</p>
+                <p class='p-block-text reveal-text'>After interviewing more people that works in fashion industry in New York, this is the most common response I got when I asked them for the obstacles that are keeping them from adapting newer, more environmental friendly technologies at work. Accordingly, I came up with the initial solution:</p>
+            </div>
+            <p class="reveal-text thick-padding p-block-text emphasis RobotoCondensed">An app that helps fashion workers to find and select the technology they need based on the problems they are having.</p>
+            <img class="no-padding p-block-image reveal-text" src='project-images/pier1/picture6.jpg'>
+            <div class="thin-padding inline">
+                <p class="p-inline-text reveal-text">In this app, users will be asked about the question they want to solve and get technical solutions accordingly. Next, users will select the most suitable solution, and get a list of companies that provide the service. Finally, after browsing and comparing, the users can message the company in the app and decide which company to use.</p>
+                <img class='p-inline-image reveal-text' src="project-images/pier1/picture7.jpg">
+            </div>
+        </div>
+
+        <div id="pier-user-test" class="p-detail">
+            <h4 class="section-title RobotoCondensed thick-padding reveal-text">USER TESTING</h4>
+            <div class="thick-padding reveal-text">
+                <img class="p-block-image" src="project-images/pier1/picture8.png">
+            </div>
+            <h5 class="reveal-text">FEEDBACKS</h5>
+            <div class="thick-padding">
+                <img class='p-block-image reveal-text' src='project-images/pier1/feedback.jpg'>
+                <p class="p-block-text emphasis RobotoCondensed reveal-text">Every test has the same concern: "Will people upgrade their work system if the upgrade doesn’t save money for them?"</p>
+            </div>
+        </div>
+
+        <div id='pier-reiterate' class='p-detail'>
+            <h4 class='section-title RobotoCondensed thick-padding reveal-text'>REITERATE</h4>
+            <div class="thick-padding">
+                <p class='p-block-text reveal-text'>The user testing revealed a lot of problems in terms of the ideology and the logical practice in my first prototype. I realized that my app will not be persuasive until I can prove that adapting new software system actually has financial benefits in addition to the environmental benefits. So I went back for more research and  data.</p> 
+                <img class="p-block-image reveal-text thick-padding" src='project-images/pier1/picture9.jpg'>
+                <p class="reveal-text">According to the data I found online,  a person will 10,000 sheets of paper and spend 725 dollars in average in office, and most of the printing work can be replaced digitally. Moreover, since fashion is a heavily visual industry, the actual amount money spent on printing will be much more in fashion industry.</p>
+                <p class="reveal-text">On the other side, a common software service costs between 2,000 dollars and 6,000 dollars, in this case, the company will actually start saving money and enjoy financial benefits in a few years, depends on the company size.</p>
+                <p class="reveal-text">Based on the research, I altered the my original approach to solve the problem and redefined my solution as an app that helps the fashion studios save money while helping with the climate change.</p>
+            </div>
+            <img class="no-padding p-block-image reveal-text" src='project-images/pier1/picture10.jpg'>
+            
+        </div>
+
+        <div class="p-detail" id="pier-app">
+            <h4 class="section-title RobotoCondensed thick-padding reveal-text">PIER 1 MOBILE APP</h4>
+            <div class='thick-padding'>
+                <p class="p-block-text reveal-text">The new app is composed of 2 parts: getting a service, and tracking financial and environmental benefits.</p>
+            </div>
+            <div id="pier-demo" class="reveal-text">
+                <video autoplay muted loop id="pier-demo">
+                    <source src="project-images/pier1/demo.mov" type="video/mp4">
+                </video>
+            </div>
+            <h5 class="reveal-text">GETTING A SERVICE</h5>
+            <p class="thick-padding p-block-text reveal-text">Same as my first prototype, user will be asked to select the problem they want to solve to start off. However, new information is required in the new app, such as budget. Based on the user information, the app will provide the list of suitable tech companies with price information so that the user can have an easier and more direct experience comparing and choosing the service. Later on, after finding the most suitable company, the user can make the purchase in the app and start the saving section.</p>
+            <div class='pic-set thick-padding reveal-text'>
+                <img class="p-block-image" src="project-images/pier1/picture11.jpg">
+                <p class="p-image-description">Collecting user information</p>
+            </div>
+            <div class='pic-set thick-padding reveal-text'>
+                <img class="p-block-image" src="project-images/pier1/picture12.jpg">
+            </div>
+            <div class='pic-set thick-padding reveal-text'>
+                <img class="p-block-image" src="project-images/pier1/picture13.jpg">
+                <p class="p-image-description">Comparing and choosing company</p>
+            </div>
+            <h5 class="reveal-text">TRACKING FINANCIAL AND ENVIRONMENTAL BENEFITS</h5>
+            <p class="thick-padding p-block-text reveal-text">After purchasing the ideal service, the user unlocks the tracking section. In this section, user can get data about how much printing material that has been saved each day, and the financial saving data accordingly. The data and chart can offer a clear view about the efficiency of the service by quantifying the benefits.</p>
+            <div class='pic-set thick-padding reveal-text'>
+                <img class="p-block-image" src="project-images/pier1/picture1.jpg">
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+        
+        <!-- <script src="anime.min.js"></script> -->
+        <script>
+            ScrollReveal().reveal('.h1-reveal', { delay: 300, duration: 1000, opacity: 0.0})
+            ScrollReveal().reveal('.desc-reveal', {distance:"100%", origin:'left', delay: 300, duration: 1200, opacity: 1, easing: 'ease'})
+            ScrollReveal().reveal('.reveal-text', {distance: '10%', origin:'bottom', delay:300, duration:700})
+        </script>
+        <!-- <script src='hamburger.js'></script> -->
+    </body>
+</html>

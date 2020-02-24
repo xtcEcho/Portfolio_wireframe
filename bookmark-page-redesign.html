@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Bookmark page redesign</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="./node_modules/animejs/lib/anime.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+        <script>
+            ScrollReveal();
+        </script>
+    </head>
+    
+    <body>
+        <div id="header-placeholder">
+            <a href='index.html'><h3 class="RobotoCondensed logo" id="logo">ECHO</h3></a>
+            <div class='hamburger'id="icon"></div>
+            <div class='hamburger' id='background'></div>
+        </div>
+        <div id="nav-placeholder" class='RobotoCondensed'>
+            <h1 class='nav-link' data-url="index.html">Home</h1>
+            <h1 class='nav-link' data-url="index.html#projects">Projects</h1>
+            <h1 class='nav-link'>Resume</h1>
+            <h1 class='nav-link'data-url='about-me.html'>About Echo</h1>
+        </div>
+        <video autoplay muted loop id="myVideo" class="top-image">
+                <source src="project-images/bookmark/video.mp4" type="video/mp4">
+        </video>              
+        <div id="p-description" class="thin-padding">
+            <h1 class="RobotoCondensed h1-reveal">
+                THREE-D BOOKMARK PAGE
+            </h1>
+            <p class="desc-reveal">I designed and developed an experimental 3D web interface that convert a conventional “Bookmark” page into an interactive 3D space using THREE.JS. </p>
+        </div>
+        <div id='p-concept' class='thin-padding p-detail inline'>
+            <img id='original-bookmark' class="p-inline-image reveal-text" src='project-images/bookmark/original-bookmark.png'>
+            <div class='p-inline-text'>
+                <h4 class="RobotoCondensed reveal-text">CONCEPT</h4>
+                <p class="reveal-text">Getting to code with THREE.JS makes me realize how powerful and intuitive an interface can be when it’s presented in 3D, so I wanted to experiment and play with potentiality of space.</p>
+                <p class="reveal-text">My goal is to recreate a straightforward and playful “bookmark” page to replace the conventional “bookmark" page, which is often presented by stacking our favorite websites on top of each other.</p>
+            </div>
+        </div>
+        <div id='p-inspiration' class='thick-padding p-detail'>
+            <div class="p-half-block-text right">
+                <h4 class="RobotoCondensed reveal-text">INSPIRATION</h4>
+                <p class="reveal-text">My inspiration came from James Turrell and Yayoi Kusama. These 2 artists utilized the nature of light and reflection and brought extraordinary impressions of space and dimensions to the viewers.</p>
+            </div>
+            <div id='yayoi' class='pic-set reveal-text'>
+                <img class="p-block-image" src="./project-images/bookmark/yayoi.jpg">
+                <p class="p-image-description">Yayoi Kusama</p>
+            </div>
+            <div id="turrell" class='pic-set reveal-text'>
+                <img class="p-block-image" src="./project-images/bookmark/james.jpg">
+                <p class="p-image-description">James Turrell</p>
+            </div>
+        </div>
+        <div id="p-recreation" class='thick-padding p-detail'>
+            <div class='p-half-block-text left'>
+                <h4 class="RobotoCondensed reveal-text">RECREATION</h4>
+                <p class="reveal-text">In order to fully emphasize on the immersive experience of 3d interface, I constructed a room with a mirror and floating blobs with mirror reflection.</p>
+                <p class="reveal-text">Each blob represents a bookmarked website, and by turning the website handlers into objects, the experience of using bookmark page becomes way more intuitive and interesting.</p>
+            </div>
+        </div>
+        <img id="bookmark-home" class='no-padding p-block-image p-detail reveal-text' src="project-images/bookmark/home.png">
+        <div class='thick-padding p-detail'>
+            <div id='mirror' class='pic-set reveal-text'>
+                <img class="p-block-image" src="./project-images/bookmark/mirror-reflection.jpg">
+                <p class="p-image-description">Real-time mirror reflection</p>
+            </div>
+            <div id='blob' class='pic-set reveal-text'>
+                <img class="p-block-image" src="project-images/bookmark/blob-reflection.jpg">
+                <p class='p-image-description'>Blob reflection</p>
+            </div>
+        </div>
+    
+        <script src="main.js"></script>
+        
+        <!-- <script src="anime.min.js"></script> -->
+        <script>
+            ScrollReveal().reveal('.h1-reveal', { delay: 300, duration: 1000, opacity: 0.0})
+            ScrollReveal().reveal('.desc-reveal', {distance:"100%", origin:'left', delay: 300, duration: 1200, opacity: 1, easing: 'ease'})
+            ScrollReveal().reveal('.reveal-text', {distance: '10%', origin:'bottom', delay:200, duration:700})
+        </script>
+        <!-- <script src='hamburger.js'></script> -->
+    </body>
+</html>

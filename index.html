@@ -1,96 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML wireframe</title>
-    <meta name="viewport" content="width=device-width, intitial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <title>Echo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css"> -->
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./node_modules/animejs/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+        ScrollReveal();
+    </script>
 </head>
 
 <body>
-    <nav>
-        <span class = "navigation">NAME/LOGO/</span>
-        <input type="image" class="navigation small" src="images/echo_hamburger_menu.png" />
-        <ul class="big">
-            <li><a href="">NAV 1</a></li>
-            <li><a href="">NAV 2</a></li>
-        </ul>
-    </nav>
-    <main>
-        <header>
-            <div class="section_text">
-                <h1 class="outer">HEADER</h1>
-                <h2 class="outer">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h2>
+    <div id="header-placeholder">
+        <a href='index.html'><h3 class="RobotoCondensed logo" id="logo">ECHO</h3></a>
+        <div class='hamburger'id="icon"></div>
+        <div class='hamburger' id='background'></div>
+    </div>
+    <div id="nav-placeholder" class='RobotoCondensed'>
+        <h1 class='nav-link' data-url="index.html">Home</h1>
+        <h1 class='nav-link' data-url="index.html#projects">Projects</h1>
+        <h1 class='nav-link'>Resume</h1>
+        <h1 class='nav-link'data-url='about-me.html'>About Echo</h1>
+    </div>
+    <main class='container'>
+        <div class="front-page thin-padding child">
+            <h1 class="RobotoCondensed frontpage-h1">Echo generates new ideas, and realizes them.</h1>
+            <h2 class="frontpage-h2">I like to make unique things.</h2>
+            <p class="frontpage-p">Web-based product design</p>
+        </div>
+        <a id="projects">
+        <div class="banner child thin-padding RobotoCondensed project">
+            <div>P</div>
+            <div>R</div>
+            <div>O</div>
+            <div>J</div>
+            <div>E</div>
+            <div>C</div>
+            <div>T</div>
+            <div>S</div>
+        </div>
+
+        <div class="item child project" id="threedweb">
+            <div class='image-container'>
+                <div class="main-image" data-url="bookmark-page-redesign.html"></div>
             </div>
-            <!-- <img src="//images/profile_vertical.JPG" alt="profile pic"> -->
-            <div id="profile_pic">profile picture</div>
-        </header>
+            <div class="RobotoCondensed fp-detail">
+                <p class='name'>THREE-D BOOKMARK PAGE DESIGN</p>
+                <p class='category'>Web design and development</p>
+            </div>
+              
+        </div>
 
-        <section class= "section_title outer">
-            <h3>SECTION 1/</h3>
-        </section>
+        <div class='item child project' id="selfie">
+            <div class="image-container">
+                <div class="main-image" data-url="remote-selfie.html"></div>
+            </div>
+            <div class="RobotoCondensed fp-detail">
+                <p class='name'>REMOTE GROUP SELFIE MACHINE</p>
+                <p class='category'>Web design and development</p>
+            </div>
+        </div>
 
-        <section class="projects inner">
-            <section id="space_trivia">
-                <div class="section_pic">
-                    project cover
-                    <!-- <img src="//images/SpaceTrivia_cover.png" alt="Space Trivia"> -->
-                </div>
-                <div class="section_text">
-                    <h2 class="project_title">Project 1 title</h2>
-                    <p class="project_description big_line_height">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue nulla velit, nec viverra mauris aliquam vitae. Donec finibus egestas metus, at aliquet lacus gravida eget.</p>
-                    <section class="other_info">
-                        <b>Language info</b>
-                        <button onclick="window.location.href = 'https://github.com/xtcEcho/SpaceTrivia';">PROJECT REPO</button>
-                        <button onclick="window.location.href = 'https://xtcecho.github.io/SpaceTrivia/';">LIVE APP</button>                       
-                    </section>
-                </div>
-            </section>
+        <div class="item project child" id="pier1">
+            <div class='image-container'>
+                <div class="main-image" data-url="pier1.html"></div>
+            </div>
+            <div class="RobotoCondensed  fp-detail">
+                <p class='name'>PIER 1 MOBILE DESIGN</p>
+                <p class='category'>UX design</p>
+            </div>
+                               
+        </div>
 
-            <section id="whale_fall">
-                <div class="section_pic">
-                    project cover
-                    <!-- <img src="//images/whaleFall_cover.jpg" alt="Whale Fall"> -->
-                </div>
-                <div class="section_text">
-                        <h2 class="project_title">Project 2 title</h2>
-                        <p class="project_description big_line_height">Suspendisse massa nunc, tempor in pharetra eget, semper eget magna. Curabitur at diam neque. Nulla nec nibh bibendum, laoreet libero at, placerat ex. </p>
-                        <section class="other_info">
-                            <b>Language info</b>
-                            <button onclick="window.location.href = 'https://github.com/xtcEcho/Whale_fall';">PROJECT REPO</button>
-                            <button onclick="window.location.href = 'https://xtcecho.github.io/Whale_fall/';">LIVE APP</button>
-                        </section>
-                </div>
-            </section>
+        <div class='item project child' id='ana'>
+            <div class='image-container'>
+                <div class='main-image' data-url="ana.html"></div>
+            </div>
+            <div class="RobotoCondensed fp-detail">
+                <p class='name'>ANA MOBILE REDESIGN</p>
+                <p class='category'>UX design</p>
+            </div>
+        </div>
 
-            <section id="ana_app">
-                <div class="section_pic">
-                    project cover
-                    <!-- <img src="//images/ana_cover.png" alt="ANA mobile app"> -->
-                </div>
-                <div class="section_text">
-                    <h2 class="project_title">Project 3 title</h2>
-                    <p class="project_description big_line_height">Maecenas tempor rutrum sapien in viverra. Quisque nec consequat nisi, eget tincidunt metus. Nam facilisis leo ac turpis imperdiet blandit.</p>
-                    <section class="other_info">
-                        <b>Tool info</b>
-                    </section>
-                </div>
-            </section>
-        </section>
-
+        <div class='item product child' id='whalefall'>
+            <div class="image-container">
+                <div class='main-image' data-url="whalefall.html"></div>
+            </div>
+            <div class="RobotoCondensed fp-detail">
+                <p class='name'>WHALE FALL: A DRAWING MACHINE</p>
+                <p class='category'>Creative coding</p>
+            </div>
+        </div>
+        </a>
+        <div id="contact" class="child thin-padding">
+            <div id="contact-title" class="RobotoCondensed">
+                <p>Find me</p>
+            </div>
+            <div id="contact-info">
+                <a href = "mailto: abc@example.com">luwenye2010@gmail.com</a>
+                <a href="https://www.linkedin.com/in/echo-lu-7bb990141/">LinkedIn</a>
+                <a href="https://github.com/xtcEcho">Github</p>
+            </div>
+        </div>
     </main>
+    <script src="main.js"></script>
+    
+    <script>
+        ScrollReveal().reveal('.frontpage-h1', {duration: 2500})
+        ScrollReveal().reveal('.frontpage-h2', { delay: 1000, duration: 1500 })
+        ScrollReveal().reveal('.frontpage-p', { delay: 1500 , duration: 1500})
+        let slideUp = {
+            distance: '10%',
+            origin: 'bottom',
+            delay: 500,
+            duration: 700,
+            easing: 'ease',
+            opacity: 0,
+            reset: true,
+            // cleanup: true
+        };
 
-    <footer role="contact_info">
-        <section class="section_title">
-            <h3>SECTION 2</h3>
-        </section>
-
-        <section class="contact_info">
-                <b><a href="mailto:luwenye2010@gmail.com">EMAIL</a></b>
-                <b><a href="https://github.com/xtcEcho">GITHUB</a></b>
-                <b><a href="https://www.linkedin.com/in/echo-lu-7bb990141/">LINKEDIN</a></b>
-        </section>
-    </footer>
+        ScrollReveal().reveal('.main-image', slideUp);
+        ScrollReveal().reveal('.banner', slideUp)
+        // ScrollReveal().reveal('.main-image', { cleanup: true });
+        // ScrollReveal().clean('.main-image', slideUp);
+    </script>
 </body>
 
 </html>
