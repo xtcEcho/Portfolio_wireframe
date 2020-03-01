@@ -56,7 +56,7 @@ navLinks.forEach(link => {
         }, 800)
         anime.timeline()
             .add({
-                targets: '.nav-link',
+                targets: '.dropdown',
                 translateY: 0,
                 easing: 'easeOutExpo',
                 direction:'reverse',
@@ -100,7 +100,7 @@ hamburger.addEventListener('click', (event) =>{
         $('#nav-placeholder').css('display', "block")
         anime.timeline()
             .add({
-                targets: '.nav-link',
+                targets: '.dropdown',
                 translateY: anime.stagger('14vh'),
                 easing: 'easeOutExpo',
                 duration: 1500,
@@ -141,7 +141,7 @@ hamburger.addEventListener('click', (event) =>{
         }, 450);
         anime.timeline()
             .add({
-                targets: '.nav-link',
+                targets: '.dropdown',
                 translateY: 0,
                 easing: 'easeOutExpo',
                 direction:'reverse',

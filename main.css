@@ -81,7 +81,7 @@ a {
     display:none;
 }
 
-h1.nav-link{
+#nav-placeholder h1{
     z-index: 20;
     color: rgb(247,247,247);
     text-align: right;
@@ -240,7 +240,7 @@ h1.nav-link{
         right: 6vw;
     }
 
-    h1.nav-link {
+    #nav-placeholder h1 {
         right: 6vw;
     }
 
@@ -368,7 +368,7 @@ h1.nav-link{
         right: 30px;
     }
 
-    h1.nav-link {
+    #nav-placeholder h1 {
         text-align: right;
         right: 30px;
     }
