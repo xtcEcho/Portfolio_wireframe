@@ -83,7 +83,7 @@ a {
 
 h1.nav-link{
     z-index: 20;
-    color: rgb(255, 255, 255);
+    color: rgb(247,247,247);
     text-align: right;
     font-size: 10vh;
     margin: 0;
@@ -97,7 +97,7 @@ h1.nav-link{
 
 #nav-placeholder a {
     text-decoration: none;
-    color: white;
+    color: rgb(247,247,247);
     
 }
 
@@ -120,7 +120,9 @@ h1.nav-link{
 }
 
 .front-page p {
+    margin-top: 5vh;
     font-weight: 300;
+    opacity: 0.5;
     /* font-weight: lighter; */
 }
 
@@ -259,7 +261,7 @@ h1.nav-link{
    }
 
    .front-page p {
-       font-size: 14px;
+       font-size: 18px;
    }
 
    .banner{
@@ -393,7 +395,7 @@ h1.nav-link{
     }
 
     .front-page p {
-        font-size:3vw;
+        font-size:2.5vw;
     }
 
     .child {
@@ -443,7 +445,52 @@ h1.nav-link{
         font-size: 2vw;
     }
 
+    #about-me {
+        /* width: 100%; */
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: hidden;
+        padding-top: 10%;
+        /* padding-bottom: 5%; */
+    }
+
     #echo-selfie {
+        width: 40%;
+        align-self: flex-start;
+        margin-top: 0;
+        /* margin-top: 10%; */
+    }
+
+    #echo-intro {
+        font-size: 4vw;
+        line-height: 1.4em;
+        padding-top: 20vh;
+        width: 55%;
+        overflow-y: auto;
+        padding-bottom: 20vh;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #echo-intro::-webkit-scrollbar-thumb {
+        background: rgb(247,247,247);
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(255,229,235);
+    }
+    
+    #echo-intro::-webkit-scrollbar {
+        width: 1vw;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgb(255,229,235);
+        border-radius: 10px;
+    }
+    /* #echo-selfie {
         position: fixed;
         left: 7vw;
         top: 100px;
@@ -455,7 +502,7 @@ h1.nav-link{
         line-height: 1.4em;
         margin-left: 45%;
         margin-top: 250px;
-    }
+    } */
 
     /* CONTACT ME */
     #contact {

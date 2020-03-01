@@ -38,6 +38,16 @@ ul {
     list-style-type: circle;
 }
 
+.p-footer {
+    height: 100vh;
+    font-weight: bold;
+    font-size: 12vw;
+    color:rgb(255,229,235);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 @media screen and (max-width: 899px){
     .top-image {

@@ -84,6 +84,14 @@
                 <img class='p-block-image' src='project-images/ANA/pic5.png'>
             </div>
         </div>
+        <a href='/whalefall.html'>
+            <div class="p-footer thin-padding RobotoCondensed">
+                <div>N</div>
+                <div>E</div>
+                <div>X</div>
+                <div>T</div>
+            </div>
+        </a>
     
         <script src="main.js"></script>
         
@@ -92,6 +100,11 @@
             ScrollReveal().reveal('.h1-reveal', { delay: 300, duration: 1000, opacity: 0.0})
             ScrollReveal().reveal('.desc-reveal', {distance:"100%", origin:'left', delay: 300, duration: 1200, opacity: 1, easing: 'ease'})
             ScrollReveal().reveal('.reveal-text', {distance: '10%', origin:'bottom', delay:200, duration:700})
+            let reveal = {
+                delay:500,
+                duration:700, 
+            }
+            ScrollReveal().reveal('.p-footer', reveal)
         </script>
         <!-- <script src='hamburger.js'></script> -->
     </body>

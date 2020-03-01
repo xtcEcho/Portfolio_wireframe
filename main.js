@@ -50,7 +50,7 @@ navLinks.forEach(link => {
         console.log(link.getAttribute('data-url'))
         setTimeout(function(){ 
             $('#nav-placeholder').css('display', 'none')
-        }, 500);
+        }, 450);
         setTimeout(function(){
             window.location.href=link.getAttribute('data-url')
         }, 800)
@@ -60,7 +60,8 @@ navLinks.forEach(link => {
                 translateY: 0,
                 easing: 'easeOutExpo',
                 direction:'reverse',
-                duration: 600,
+                duration: 800,
+                delay: 100,
             })
         anime.timeline()
             .add({
@@ -120,7 +121,7 @@ hamburger.addEventListener('click', (event) =>{
         anime.timeline()
             .add({
                 targets: '#icon',
-                backgroundColor: "rgb(255, 255, 255)",
+                backgroundColor: "rgb(247,247,247)",
                 duration: 1500, 
                 easing: 'easeOutExpo',
             }) 
@@ -128,7 +129,7 @@ hamburger.addEventListener('click', (event) =>{
         anime.timeline()
             .add({
                 targets: '#logo',
-                color: "rgb(255, 255, 255)",
+                color: "rgb(247,247,247)",
                 duration: 1500, 
                 easing: 'easeOutExpo',
             })
@@ -137,14 +138,15 @@ hamburger.addEventListener('click', (event) =>{
         // $('#nav-placeholder').css('display', 'none')
         setTimeout(function(){ 
             $('#nav-placeholder').css('display', 'none')
-        }, 500);
+        }, 450);
         anime.timeline()
             .add({
                 targets: '.nav-link',
                 translateY: 0,
                 easing: 'easeOutExpo',
                 direction:'reverse',
-                duration: 600,
+                duration:800,
+                delay: 100,
             })
         anime.timeline()
             .add({

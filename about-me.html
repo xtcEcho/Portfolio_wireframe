@@ -34,12 +34,25 @@
         <img src="project-images/aboutme/echo-profile.JPG" id='echo-selfie'>
         <p id="echo-intro">I am a web developer and a student in Integrated Digital Media program at New York University and the Front End Web Development Career Path bootcamp at Thinkful. I also have a background in Fashion Design and am a graduate from Fashion Design major of Parsons School of Design. I am a big enthusiast in both technology and aesthetic, and it is supreme pleasure for me to work and play with coding and design at the same time and create things that are practical and useful but at the same time, visionary.</p>
     </div>
+    <a href="index.html#projects">
+        <div class="banner thin-padding RobotoCondensed project">
+            <div>P</div>
+            <div>R</div>
+            <div>O</div>
+            <div>J</div>
+            <div>E</div>
+            <div>C</div>
+            <div>T</div>
+            <div>S</div>
+        </div>
+    </a>
+
     <script src="main.js"></script>
     
     <script>
        
         let slideUp = {
-            distance: '10%',
+            distance: '5%',
             origin: 'bottom',
             delay: 500,
             duration: 700,
@@ -48,8 +61,12 @@
             reset: true,
             // cleanup: true
         };
-
-        ScrollReveal().reveal('#echo-selfie', slideUp);
+        let reveal = {
+            delay:500,
+            duration:700, 
+        }
+        ScrollReveal().reveal('#about-me', slideUp);
+        ScrollReveal().reveal('.banner', reveal)
         // ScrollReveal().reveal('.main-image', { cleanup: true });
         // ScrollReveal().clean('.main-image', slideUp);
     </script>

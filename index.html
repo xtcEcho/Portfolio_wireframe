@@ -125,9 +125,13 @@
             reset: true,
             // cleanup: true
         };
-
+        let reveal = {
+            delay:500,
+            duration:700,     
+        }
         ScrollReveal().reveal('.main-image', slideUp);
-        ScrollReveal().reveal('.banner', slideUp)
+        ScrollReveal().reveal('.banner', reveal)
+        ScrollReveal().reveal('#contact', slideUp)
         // ScrollReveal().reveal('.main-image', { cleanup: true });
         // ScrollReveal().clean('.main-image', slideUp);
     </script>
